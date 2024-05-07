@@ -1,6 +1,6 @@
 public class player {
     public int currentValueOfCards;
-    public String whatCardYouHave;
+    public card[] hand;
     public String nameofplayer;
     public boolean isDealerOrPlayer;
     public boolean chooseToHit;
