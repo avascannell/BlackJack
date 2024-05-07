@@ -1,5 +1,7 @@
 public class card {
-    //soiut heart, club, spade, diamond
+
+    Public String soiut heart;
+            , club, spade, diamond
     //value ex wprth 1-11 points in game
-    // type ex ace, 1,2,
+    // type ex ace, 1,2,... Jack, Queen, King
 }
