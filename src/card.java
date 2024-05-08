@@ -18,10 +18,20 @@ public class card {
         if(pSuit == 1){
             suit = "spades";
         }
+        if(pSuit == 2){
+            suit = "clubs";
+        }
+        if(pSuit == 3){
+            suit = "hearts";
+        }
+        if(pSuit == 4){
+            suit = "diomands";
+        }
+
       suit = pSuit;
       type = pType;
       //TODO; write if statements that set the value of value based on type
-      value =
+      //value =
     }
     public void print(){
         System.out.println("the" + type + "of" + suit + " is worth" + value + "points.");
