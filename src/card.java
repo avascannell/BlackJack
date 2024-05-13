@@ -36,10 +36,10 @@ public class card {
             type = "six";
         }
 
-      suit = pSuit;
-      type = pType;
+      //suit = pSuit;
+     // type = pType;
       //TODO; write if statements that set the value of value based on type
-      value =
+
     }
     public void print(){
         System.out.println("the" + type + "of" + suit + " is worth" + value + "points.");

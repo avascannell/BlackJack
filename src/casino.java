@@ -1,10 +1,17 @@
+import java.util.Scanner;
+
 public class casino {
     public card[] deck;
+    public boolean isHIt = false;
+    public player p;
     public static void main(String[] args) {
         casino c =  new casino();
     }
 
     public casino() {
+
+
+
         System.out.println("welcome to Mx. Bradford's casino!");
         deck = new card[52];
         int count = 0;
@@ -15,5 +22,21 @@ public class casino {
                 count++;
             }
         }
+        p = new player();
+        p.print();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String userName = scan.nextLine();
+        System.out.println(userName);
+        p.name = userName;
+        p.print();
+    }
+    public void makeDeck(){
+        deck = new card[52];
+    }
+    public void deal(){
+        // first and second card to pl
+        p.hand [0] = deck[0];
+        p.hand [1] = deck[1];
     }
 }
