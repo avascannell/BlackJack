@@ -36,6 +36,7 @@ public class card {
             type = "six";
         }
 
+
       //suit = pSuit;
      // type = pType;
       //TODO; write if statements that set the value of value based on type

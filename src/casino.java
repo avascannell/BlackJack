@@ -4,25 +4,16 @@ public class casino {
     public card[] deck;
     public boolean isHIt = false;
     public player p;
+    public player dealer;
+    public int numCards;
     public static void main(String[] args) {
         casino c =  new casino();
-    }
-    public dealer(){
-        new player(
-                cardsValue = 0;
-        name = "dealer";
-        isPlayer = false;
-        hand = new card[2];
 
 
-
-        );
     }
 
-    public casino() {
 
-
-
+    public casino(){
         System.out.println("welcome to Mx. Bradford's casino!");
         deck = new card[52];
         int count = 0;
@@ -33,7 +24,14 @@ public class casino {
                 count++;
             }
         }
+
+
         p = new player();
+        dealer = new player();
+        p.isPlayer = true;
+      //  d = new player();
+        dealer.isPlayer = false;
+        deal();
         p.print();
         Scanner scan = new Scanner(System.in);
         System.out.println("What is your name?");
@@ -41,6 +39,7 @@ public class casino {
         System.out.println(userName);
         p.name = userName;
         p.print();
+
 
 
     }
@@ -51,13 +50,15 @@ public class casino {
         // first and second card to pl
         p.hand [0] = deck[0];
         p.hand [1] = deck[1];
-        pDealer [2] = deck[2];
+
+        dealer.hand[0]= deck[2];
+        dealer.hand[1] = deck[3];
+
+
     }
 
-    Scanner scan = new Scanner(System.in);
-        System.out.println("What is your name?");
-    String userName = scan.nextLine();
-    System.out.println(userName);
-    p.name = userName;
-        p.print();
 }
+
+
+
+
