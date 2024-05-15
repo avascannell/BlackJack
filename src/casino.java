@@ -30,6 +30,8 @@ public class casino {
         System.out.println(userName);
         p.name = userName;
         p.print();
+
+
     }
     public void makeDeck(){
         deck = new card[52];
@@ -39,4 +41,11 @@ public class casino {
         p.hand [0] = deck[0];
         p.hand [1] = deck[1];
     }
+
+    Scanner scan = new Scanner(System.in);
+        System.out.println("What is your name?");
+    String userName = scan.nextLine();
+        System.out.println(userName);
+    p.name = userName;
+        p.print();
 }
