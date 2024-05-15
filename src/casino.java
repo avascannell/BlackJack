@@ -7,6 +7,17 @@ public class casino {
     public static void main(String[] args) {
         casino c =  new casino();
     }
+    public dealer(){
+        new player(
+                cardsValue = 0;
+        name = "dealer";
+        isPlayer = false;
+        hand = new card[2];
+
+
+
+        );
+    }
 
     public casino() {
 
@@ -40,12 +51,13 @@ public class casino {
         // first and second card to pl
         p.hand [0] = deck[0];
         p.hand [1] = deck[1];
+        pDealer [2] = deck[2];
     }
 
     Scanner scan = new Scanner(System.in);
         System.out.println("What is your name?");
     String userName = scan.nextLine();
-        System.out.println(userName);
+    System.out.println(userName);
     p.name = userName;
         p.print();
 }
