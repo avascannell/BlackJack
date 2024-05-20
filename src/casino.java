@@ -31,6 +31,8 @@ public class casino {
         p.isPlayer = true;
       //  d = new player();
         dealer.isPlayer = false;
+
+
         deal();
         p.print();
         Scanner scan = new Scanner(System.in);
@@ -53,6 +55,8 @@ public class casino {
 
         dealer.hand[0]= deck[2];
         dealer.hand[1] = deck[3];
+
+
 
 
     }

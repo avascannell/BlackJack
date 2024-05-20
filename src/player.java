@@ -2,7 +2,7 @@ public class player {
     public int cardsValue;
     public card[] hand;
     public String name;
-    public boolean isDealer;
+    public card isDealer;
     public boolean isPlayer;
     public boolean chooseToHit;
     public boolean chooseToStay;
@@ -19,6 +19,7 @@ public class player {
         }
         else{
         System.out.println("Dealer info");
+        addCard(isDealer);
         }
     }
 
