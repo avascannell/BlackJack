@@ -13,13 +13,19 @@ public class player {
        for(int i = 0; i< hand.length; i++){
            hand[i].print();
        }
-        if(isPlayer){
+        if(isPlayer) {
             System.out.println("hi" + name);
             System.out.println("you have" + cardsValue + "points");
+            for(int i = 0; i < hand.length; i++) {
+                hand[i].print();
+            }
         }
+
+
         else{
-        System.out.println("Dealer info");
-        addCard(isDealer);
+            System.out.println("Dealer info");
+            System.out.println("the delaer has" + cardsValue + "points");
+            hand[0].print();
         }
     }
 
