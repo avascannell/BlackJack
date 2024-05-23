@@ -37,6 +37,13 @@ public class player {
         numCards = 0;
     }
     public void addCard(card c){
+        if(numCards>=2){
+            card [] moreCards = new card[hand.length + 1];
+            for(int i = 0; i < 2; i++){
+                moreCards[i] = hand[i];
+            }
+            hand = moreCards;
+        }
         hand[numCards] = c;
         numCards = numCards +1;
         cardsValue = cardsValue + c.value;
