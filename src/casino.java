@@ -19,6 +19,7 @@ public class casino {
         System.out.println("welcome to Mx. Bradford's casino!");
         deck = new card[52];
         makeDeck();
+        shuffleDeck();
         printDeck();
 
 
@@ -60,10 +61,17 @@ public class casino {
                 p.print();
 
             } else {
+
                 // dealer has to play
                 // delaer hits untill they reach or surpass 17
                 //use add card
             }
+        }
+        if( p.addCard(deck[numDealtCards]); = > 21;){
+            System.out.println("BUST!");
+        }
+        if( p.addCard(deck[numDealtCards] = < dealer.addCard(deck[2]);){
+
         }
     }
 
@@ -81,11 +89,10 @@ public class casino {
 
     public void deal() {
         // first and second card to pl
-        p.hand[0] = deck[0];
-        p.hand[1] = deck[1];
-
-        dealer.hand[0] = deck[2];
-        dealer.hand[1] = deck[3];
+        p.addCard(deck[0]);
+        p.addCard(deck[1]);
+        dealer.addCard(deck[2]);
+        dealer.addCard(deck[3]);
         numDealtCards = 4;
 
     }
@@ -97,10 +104,15 @@ public class casino {
         }
     }
     public void shuffleDeck(){
-        for(int i = 0; i < deck.length; i=i + 2){
-            math.random
+        for(int i = 0; i < 52; i++){
+           int randomIndex = (int)(Math.random()*52);
+           card randomCard = deck[randomIndex];
+           card temp = deck[i];
+           deck[i] = randomCard;
+           deck[randomIndex] = temp;
         }
     }
+
 
 }
 
